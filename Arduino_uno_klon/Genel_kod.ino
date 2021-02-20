@@ -1,6 +1,6 @@
 #include  <LiquidCrystal.h> 
-#define TurkTelekom_T290B "WiFi_Ismi"
-#define RM0p0ugD "WiFi Sifresi"
+#define Wifi_ismi "WiFi_Ismi"
+#define Wifi_sifresi "WiFi_Sifresi"
 #define IP "184.106.153.149" //thingspeak.com IP adresi
 int ToprakPin = 6;
 int veri;
@@ -26,7 +26,7 @@ void setup() {
   if (Serial.find("OK")) { //esp modülü ile bağlantıyı kurabilmişsek modül "AT" komutuna "OK" komutu ile geri dönüş yapıyor.
     Serial.println("AT+CWMODE=1"); //esp modülümüzün WiFi modunu STA şekline getiriyoruz. Bu mod ile modülümüz başka ağlara bağlanabilecek.
     delay(2000);
-    String baglantiKomutu = String("AT+CWJAP=\"") + TurkTelekom_T290B + "\",\"" + RM0p0ugD + "\"";
+    String baglantiKomutu = String("AT+CWJAP=\"") + Wifi_ismi + "\",\"" + Wifi_sifresi + "\"";
     Serial.println(baglantiKomutu);
 
     delay(5000);

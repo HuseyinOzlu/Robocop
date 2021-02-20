@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome | Robocop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <header>
+        <h1 class="head">Hello, I'm Robocop, What's up</h1>
+    </header>
+    <div id="tablo">
+        <h2>Moisture : </h2>
+        <p>%80</p>
+        <progress value="80" max="100"></progress>
+        <h2>Is there rain ?</h2>
+        <p>There is | There isn't</p>
+        <img src="img/tik.png" id="kutu"> <img src="img/cross.png" id="kutu1">
+        <div id="sail">
+            <h2>Water in soil :</h2>
+            <p>
+                30%
+            </p>
+            <progress value="30" max="100">
+
+        </progress></div>
+        <div class="urun">
+            <h2 class="bas">The most suitable product:</h2>
+            <p class="urun1">RADİSH</p>
+        </div>
+
+        <div id="salgam">
+            <img src="img/salgam-removebg-preview.png">
+        </div>
+        <p id="Sarj">Percent of
+            <br> Battery : </p>
+        <p id="Sarj1">%90</p>
+        <div id="Sarj_yüzdesi">
+
+            <progress value="180" max="200"></progress>
+        </div>
+
+    </div>
+    <hgroup class="bubble">
+        <fieldset>
+            <legend>Robocop</legend>
+            <div>
+                <p>
+                    Hello, I'm Robocop. What's up?
+                    <br> Do you have any questions.
+                    <br> If you have. Do you ask me: </p>
+
+                <input id="gir">
+
+
+                <button type="button" onclick="oku()">></button>
+                <p id="yaz"></p>
+                <div class="robot">
+                    <img src="img/robot(1).png" alt="robot">
+                </div>
+            </div>
+
+        </fieldset>
+
+    </hgroup>
+    <script>
+        function oku() {
+            var x, text;
+            x =
+                document.getElementById("gir").value;
+            if (isNaN(x) || x < 0 || x == 0 || x > 0) {
+                text = "I'm sorry, I can't help at now.";
+            } else {
+                text = "I'm sorry, I can't help at now.";
+            }
+            document.getElementById("yaz").innerHTML = text;
+        }
+    </script>
+
+
+</body>
+
+</html>
+
+</html>

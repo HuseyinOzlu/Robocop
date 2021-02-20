@@ -1,0 +1,149 @@
+body {
+    background-color: aqua;
+}
+
+header {
+    border: 2px solid groove greenyellow;
+    height: 130px;
+    width: 1700px;
+    background-color: rgba(7, 48, 137, 0.434);
+    font-family: fonn;
+}
+
+.head {
+    position: relative;
+    left: 600px;
+    width: 850px;
+    top: 40px;
+}
+
+@font-face {
+    font-family: fonn;
+    src: url("Hello_Alpha.ttf");
+}
+
+legend::selection,
+p::selection,
+h2::selection,
+img::selection {
+    background-color: blue;
+    color: linear-gradient(270deg, rgb(17, 13, 226), rgb(28, 184, 137));
+}
+
+p,
+h2 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: large;
+}
+
+#kutu {
+    position: relative;
+    width: 100px;
+    top: -20px;
+}
+
+#kutu1 {
+    position: relative;
+    width: 90px;
+    left: -40px;
+    height: 80px;
+    top: -20px;
+}
+
+#sail {
+    position: relative;
+    top: -40px;
+}
+
+#tablo {
+    position: relative;
+    top: 200px;
+    left: 560px;
+    width: 510px;
+    height: 400px;
+    padding: 20px;
+    border: 20px solid red;
+    background-color: #bbbb;
+}
+
+#salgam {
+    position: relative;
+    left: 220px;
+    top: -400px;
+}
+
+.robot {
+    position: relative;
+    top: 300px;
+}
+
+#Sarj {
+    position: relative;
+    left: 410px;
+    top: -700px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Sarj1 {
+    position: relative;
+    left: 440px;
+    top: -700px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Sarj_yüzdesi {
+    position: relative;
+    left: 200px;
+    top: -800px;
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
+
+.bubble {
+    position: relative;
+    background: #00aabb;
+    border-radius: .4em;
+}
+
+.bubble {
+    position: relative;
+    top: -450px;
+    width: 260px;
+    padding: 60px 20px;
+    margin: 1em 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-shadow: 0 -0.05em 0.1em rgba(0, 0, 0, .3);
+}
+
+.bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #00aabb;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+}
+
+.urun {
+    position: relative;
+    top: -450px;
+    left: 220px;
+}
+
+.urun1 {
+    position: relative;
+    left: 80px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

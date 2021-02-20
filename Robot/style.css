@@ -1,0 +1,48 @@
+body {
+    background: #fff;
+    color: #000;
+}
+
+body.showEditorSelection .code-line {
+    position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -11px;
+    height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+    left: -30px;
+}
+
+body.showEditorSelection td.code-active-line:before,
+body.showEditorSelection td.code-line:hover:before,
+body.showEditorSelection th.code-active-line:before,
+body.showEditorSelection th.code-line:hover:before {
+    left: -4px;
+}
+
+.showEditorSelection .code-active-line:before {
+    border-left: 3px solid rgba(13, 56, 148, 0.5);
+}
+
+.showEditorSelection .code-line:hover:before {
+    border-left: 3px solid rgba(11, 45, 110, 0.6);
+}
+
+.showEditorSelection .code-line .code-line:hover:before {
+    border-left: none;
+}
+
+.Tablo {
+    width: 50cm;
+    height: 40cm;
+    height: 40cm;
+}
